@@ -1,0 +1,6 @@
+[book]
+authors = ["Mike Roberts", "Jorge Capona"]
+language = "en"
+multilingual = false
+src = "src"
+title = "pi-topOS"
