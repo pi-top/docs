@@ -1,4 +1,4 @@
-# FAQs
+# 🙋 FAQs
 
 ## What should I do when I'm having issues updating?
 Check out our [knowledge base article](https://knowledgebase.pi-top.com/knowledge/error-updating-sirius) for guidance with updating issues.

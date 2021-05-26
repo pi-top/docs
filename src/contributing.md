@@ -1,4 +1,4 @@
-# Contributing to pi-topOS
+# ✍️ Contributing to pi-topOS
 
 ## Want to contribute? Read on for guidelines, best practices, links, and more!
 

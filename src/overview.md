@@ -1,4 +1,4 @@
-# Overview
+# 👁 Overview
 
 pi-topOS is the recommended way to use your pi-top.
 

@@ -1,4 +1,4 @@
-# Glossary
+# 📘 Glossary
 
 ## Sirius
 Latest version of pi-topOS.

@@ -1,4 +1,4 @@
-# Troubleshooting
+# 🕵️ Troubleshooting
 
 This section of the documentation aims to provide useful information to assist with identifying issues with pi-topOS.
 Be sure to check out our FAQ section, that aims to address the most common questions/problems that people have.

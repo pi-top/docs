@@ -1,4 +1,4 @@
-# Controlling pi-top Hardware
+# 🤖 Controlling pi-top Hardware
 
 There are many ways to interact with hardware. However, pi-top have worked hard to offer a coherent programming experience for all.
 Consequently, this has led to the development of software development kits (SDKs).

@@ -1,4 +1,4 @@
-# Tips & Tricks
+# 💁 Tips & Tricks
 
 This section seeks to offer useful tips for working with pi-topOS, although many of these tips are more broadly useful.
 
