@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Overview - pi-topOS</title>
+        <title>Troubleshooting - pi-topOS</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">2.</strong> Troubleshooting</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">3.</strong> Contributing</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="troubleshooting.html" class="active"><strong aria-hidden="true">2.</strong> Troubleshooting</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">3.</strong> Contributing</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,19 +163,48 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#overview" id="overview">Overview</a></h1>
-<p>Hello and welcome to pi-topOS's official documentation.</p>
-<p>Please note that this documentation is currently under active construction.</p>
-<p>We ask that you bear with us while we work to assemble this document!</p>
+                        <h1><a class="header" href="#troubleshooting" id="troubleshooting">Troubleshooting</a></h1>
+<p>This section of the documentation aims to provide useful information to assist with identifying issues with pi-topOS.
+Be sure to check out our FAQ section, that aims to address the most common questions/problems that people have.</p>
+<h2><a class="header" href="#collecting-and-reviewing-system-information" id="collecting-and-reviewing-system-information">Collecting and Reviewing System Information</a></h2>
+<p>Find out how to collect useful information about your pi-top device's operating system and hardware state, and understand how to decipher/use it.</p>
+<h3><a class="header" href="#collecting-system-information" id="collecting-system-information">Collecting System Information</a></h3>
+<p>On pi-topOS you can run the following command:</p>
+<pre><code class="language-bash">pi-top support health_check
+</code></pre>
+<p>This will generate some potentially useful information about the state of the device.</p>
+<blockquote>
+<p>⚠️ <strong>WARNING</strong>: It is recommended that you review this data carefully before passing it to someone else - it may reveal personal information about your setup that you may not wish for others to know about.</p>
+<p>Do not give this information to anyone you do not trust without first checking its contents.</p>
+</blockquote>
+<h3><a class="header" href="#interpreting-system-information" id="interpreting-system-information">Interpreting System Information</a></h3>
+<h4><a class="header" href="#raspberry-pi-device-information" id="raspberry-pi-device-information">Raspberry Pi Device Information</a></h4>
+<p>Identifies the Raspberry Pi model type, and provides information about the state of the Raspberry Pi device, such as bootloader configuration, EEPROM version and GPU information.</p>
+<h4><a class="header" href="#pi-top-devices" id="pi-top-devices">pi-top Devices</a></h4>
+<p>Identifies what type of pi-top device the Raspberry Pi identifies that it is communicating with, and if any pi-top peripherals are connected or not.</p>
+<h4><a class="header" href="#system-information" id="system-information">System Information</a></h4>
+<p>Provides information about the active kernel, as well as pi-topOS build information.</p>
+<h4><a class="header" href="#interfacesboot-settingsmisc-via-raspi-config" id="interfacesboot-settingsmisc-via-raspi-config">Interfaces/Boot Settings/Misc (via raspi-config)</a></h4>
+<p>Shows information that can be determined via the 'raspi-config' tool.</p>
+<h4><a class="header" href="#network-settings" id="network-settings">Network Settings</a></h4>
+<p>Shows key network information, such as hostname, WiFi country, interfaces, IP addresses, etc.</p>
+<h4><a class="header" href="#pi-top-software-information" id="pi-top-software-information">pi-top Software Information</a></h4>
+<p>Shows the current state of pi-top software provided as systemd services, as well as the version of each pi-top software package.</p>
+<h4><a class="header" href="#pi-top-device-information" id="pi-top-device-information">pi-top Device Information</a></h4>
+<p>Provides hardware-level detail about the state of the pi-top hub.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="troubleshooting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="contributing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -187,9 +216,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="troubleshooting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="contributing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
