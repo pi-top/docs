@@ -77,7 +77,7 @@ Provide the following information:
 - Additional Context
   - Any other context or screenshots about the suggestion here.
 
-Use GitHub's Markdown to style your Issue. For example, if you are providing a Python code snippet, write it like so:
+Use [GitHub's Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) to style your Issue. For example, if you are providing a Python code snippet, write it like so:
 
 ````
 ```python
