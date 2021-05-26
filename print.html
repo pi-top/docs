@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">2.</strong> Contributing</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,6 +169,83 @@
 <p>Hello and welcome to pi-topOS's official documentation.</p>
 <p>Please note that this documentation is currently under active construction.</p>
 <p>We ask that you bear with us while we work to assemble this document!</p>
+<h1><a class="header" href="#contributing-to-pi-topos" id="contributing-to-pi-topos">Contributing to pi-topOS</a></h1>
+<h2><a class="header" href="#want-to-contribute-read-on-for-guidelines-best-practices-links-and-more" id="want-to-contribute-read-on-for-guidelines-best-practices-links-and-more">Want to contribute? Read on for guidelines, best practices, links, and more!</a></h2>
+<p>There are a tonne of ways that an enthusiastic maker, student or professional can contribute!</p>
+<h3><a class="header" href="#cool-project" id="cool-project">Cool Project?</a></h3>
+<p>Got a cool project to share? Tell us about it in the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a>!</p>
+<h3><a class="header" href="#bug-usability-issue" id="bug-usability-issue">Bug? Usability Issue?</a></h3>
+<h4><a class="header" href="#is-it-a-bug-do-we-know-about-it-is-it-documented" id="is-it-a-bug-do-we-know-about-it-is-it-documented">Is It A Bug? Do We Know About it? Is It Documented?</a></h4>
+<p>Think you've found a bug? We're keen (though obviously not happy) to hear about it.</p>
+<p>If it seems like quite a fundamental bug (such as an issue with updating), then check out the troubleshooting section first - we might already be aware of it or even have a solution for you! Otherwise, we ask that you check the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a> to see if anyone else is having the issue.</p>
+<blockquote>
+<p>If you are running Python code and getting an Exception, this may not be a bug.</p>
+</blockquote>
+<blockquote>
+<p>If you are not confident in what the issue is, then please reach out on the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a>!</p>
+</blockquote>
+<p>Have you checked the documentation? For example, the <a href="https://github.com/pi-top/pi-top-Python-SDK">pi-top Python SDK</a> has <a href="http://docs.pi-top.com/">documentation</a>.</p>
+<p>Still think you've got a bug? Let's figure out the best place to write up your bug report.</p>
+<blockquote>
+<p>If you are having a bad time with pi-topOS and its software, then there is a bug.</p>
+<p>If the documentation is confusing or missing, then this is a bug.</p>
+</blockquote>
+<h4><a class="header" href="#where-to-submit-bug-report" id="where-to-submit-bug-report">Where To Submit Bug Report?</a></h4>
+<p>Is your bug report in relation to <strong>Python development with pi-top hardware</strong>? Check out the <a href="https://github.com/pi-top/pi-top-Python-SDK">pi-top Python SDK</a> and <a href="https://github.com/pi-top/pi-top-Python-Common-Library">pi-top Python Common Library</a> GitHub repositories.</p>
+<!-- TODO -->
+<!-- Otherwise, check out Technical Details for information about how pi-topOS is organised and how to track down the appropriate GitHub repository for a bug report. Once there, be sure to check to see if there are any existing Issues and/or Pull Requests. -->
+<p>If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.</p>
+<h4><a class="header" href="#how-to-submit-bug-report" id="how-to-submit-bug-report">How To Submit Bug Report?</a></h4>
+<p>A good, well-documented bug report is the most effective way to help improve the quality of pi-top code.</p>
+<p>Check out this <a href="https://s3-eu-west-1.amazonaws.com/prod.ghost.blog/blog/2018/11/Ultimate-bug-tracking-checklist_Markerio.pdf">one-page checklist</a> outlining how to write a great bug report (or you can read its more thorough <a href="https://marker.io/blog/write-bug-report">accompanying blog post</a>!).</p>
+<!-- TODO -->
+<!-- > Check out Collecting and Reviewing System Information to find out more about how to collect information about your system. -->
+<p>Use <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">GitHub's Markdown</a> to style your Issue. For example, if you are providing a Python code snippet, write it like so:</p>
+<pre><code>```python
+print(&quot;code here&quot;)
+```
+</code></pre>
+<h3><a class="header" href="#feature-suggestion" id="feature-suggestion">Feature Suggestion?</a></h3>
+<h4><a class="header" href="#do-we-know-about-it" id="do-we-know-about-it">Do We Know About it?</a></h4>
+<p>Think you've found a bug? We'd love to hear about it!</p>
+<p>First of all, it's important to check the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a> and see if someone else has already had the same, or similar, idea. It is easier to prioritise work that has multiple users requesting the same thing!</p>
+<h4><a class="header" href="#where-to-submit-feature-suggestion" id="where-to-submit-feature-suggestion">Where To Submit Feature Suggestion?</a></h4>
+<p>Is your feature request in relation to <strong>Python development with pi-top hardware</strong>? Check out the pi-top Python SDK repository on GitHub.</p>
+<!-- TODO -->
+<!-- Otherwise, check out pi-topOS Technical Details for information about how pi-topOS is organised and how to track down the appropriate GitHub repository for a bug report. Once there, be sure to check to see if there are any existing Issues and/or Pull Requests. -->
+<p>If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.</p>
+<h4><a class="header" href="#how-to-submit-feature-suggestion" id="how-to-submit-feature-suggestion">How To Submit Feature Suggestion?</a></h4>
+<p><strong>A well-described feature suggestion is a highly effective way to help us understand user needs and tailor pi-topOS to those needs, improving the quality of pi-topOS.</strong></p>
+<p>Provide the following information:</p>
+<ul>
+<li>Problem or Possibility
+<ul>
+<li>Concise summary of the problem that this suggestion would solve, or the possibility it would enable (For example: &quot;I'm always frustrated when [...]&quot;)</li>
+</ul>
+</li>
+<li>Proposed Solution
+<ul>
+<li>Description of the enhancement that you would like to see</li>
+</ul>
+</li>
+<li>Alternative Solutions
+<ul>
+<li>Description of any alternative solutions or features you've considered, if relevant</li>
+</ul>
+</li>
+<li>Additional Context
+<ul>
+<li>Any other context or screenshots about the suggestion here.</li>
+</ul>
+</li>
+</ul>
+<p>Use GitHub's Markdown to style your Issue. For example, if you are providing a Python code snippet, write it like so:</p>
+<pre><code>```python
+print(&quot;code here&quot;)
+```
+</code></pre>
+<h3><a class="header" href="#code-submission-pull-request" id="code-submission-pull-request">Code Submission? Pull Request?</a></h3>
+<p>We ❤️ code contributions - see you on <a href="https://github.com/pi-top/">GitHub</a>!</p>
 
                     </main>
 
