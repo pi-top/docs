@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">2.</strong> Troubleshooting</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">3.</strong> Contributing</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> FAQ</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">4.</strong> Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">5.</strong> Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">6.</strong> Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">7.</strong> Contributing</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,10 +165,82 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#overview" id="overview">Overview</a></h1>
+                        <h1><a class="header" href="#pi-topos---official-documentation" id="pi-topos---official-documentation">pi-topOS - Official Documentation</a></h1>
 <p>Hello and welcome to pi-topOS's official documentation.</p>
 <p>Please note that this documentation is currently under active construction.</p>
 <p>We ask that you bear with us while we work to assemble this document!</p>
+<h1><a class="header" href="#overview" id="overview">Overview</a></h1>
+<p>pi-topOS is the recommended way to use your pi-top.</p>
+<p>pi-topOS is built on top of Raspberry Pi OS (formerly Raspbian), so a lot of things are identical.
+However there are some differences.</p>
+<p>The underlying operating system (Raspberry Pi OS) handles much of the backbone functionality that pi-topOS depends on -
+things like the desktop environment, software update management, etc.</p>
+<blockquote>
+<p>pi-topOS developers are not directly involved in the development of much of the low-level core features of pi-topOS.
+Rather, pi-topOS is 'downstream', and therefore directly benefits from this work done by the Raspberry Pi Foundation.</p>
+<p>⚠️ In rare circumstances, unexpected changes to Raspberry Pi OS can cause breaking changes to pi-topOS.
+Fortunately, this is a rare occurrence!</p>
+</blockquote>
+<h2><a class="header" href="#so-pi-topos-is-built-on-top-of-raspberry-pi-os-whats-different" id="so-pi-topos-is-built-on-top-of-raspberry-pi-os-whats-different">So pi-topOS is built on top of Raspberry Pi OS. What's different?</a></h2>
+<p>pi-topOS extends upon Raspberry Pi OS to add additional functionality and usability improvements:</p>
+<ul>
+<li>Plug-and-Play functionality with pi-top hardware</li>
+<li>Modifying the user interface (including theming)</li>
+<li>Notification system</li>
+<li>Automatic software updater</li>
+<li>Simplified user onboarding/OS setup</li>
+<li>Additional settings for pi-top hardware</li>
+<li>‘About’ page to show key information about the OS that is installed</li>
+</ul>
+<blockquote>
+<p>For more information about pi-topOS, check out the technical details subsection of the pi-topOS knowledge base</p>
+</blockquote>
+<h2><a class="header" href="#what-if-i-want-to-use-raspberry-pi-os" id="what-if-i-want-to-use-raspberry-pi-os">What if I want to use Raspberry Pi OS?</a></h2>
+<p>Some users prefer to stick to Raspberry Pi OS and install the minimal device drivers to get Plug-and-Play
+functionality with pi-top hardware without the additional customisations of pi-topOS.</p>
+<p>If you'd like to use a pi-top device with Raspberry Pi OS, take a look at this article.</p>
+<h2><a class="header" href="#what-if-i-want-to-use-another-operating-system" id="what-if-i-want-to-use-another-operating-system">What if I want to use another operating system?</a></h2>
+<blockquote>
+<p>⚠️ <strong>Other operating systems are not supported.</strong></p>
+</blockquote>
+<p>For a pi-top device to work properly, communication is required between the Raspberry Pi and the pi-top's onboard
+&quot;Hub&quot; (microcontroller unit, or MCU).
+At this time, the software for working with a pi-top is only available for Raspberry Pi OS-based systems.</p>
+<p>Without this communication, all pi-top devices will be unable to power off correctly.
+The power button will need to be held in place for longer to force a hard shutdown, which is dangerous and could cause
+serious SD card corruption.
+Shutting down the Raspberry Pi via a 'soft shutdown' (asking the operating system to shut down, such as via the start
+menu) will turn off the Raspberry Pi, but the pi-top device will continue to be powered on.</p>
+<p>Additionally, hardware will not work as intended - for instance, display brightness on pi-top laptops and the
+miniscreen on the pi-top [4].
+For pi-top devices with an onboard battery, it will not be possible to determine its state.</p>
+<blockquote>
+<p>If you are using an unsupported OS, it is recommended that you power off your Raspberry Pi via the start menu and wait
+until the Raspberry Pi has halted before powering off the pi-top hardware via the hardware power button.</p>
+</blockquote>
+<h1><a class="header" href="#faqs" id="faqs">FAQs</a></h1>
+<h2><a class="header" href="#what-should-i-do-when-im-having-issues-updating" id="what-should-i-do-when-im-having-issues-updating">What should I do when I'm having issues updating?</a></h2>
+<p>Check out our <a href="https://knowledgebase.pi-top.com/knowledge/error-updating-sirius">knowledge base article</a> for guidance with updating issues.</p>
+<h2><a class="header" href="#why-does-my-screen-resolution-keep-resetting-on-reboot" id="why-does-my-screen-resolution-keep-resetting-on-reboot">Why does my screen resolution keep resetting on reboot?</a></h2>
+<p><code>autorandr</code>, HDMI forced output, </p>
+<h2><a class="header" href="#how-does-pi-topos-handle-versioning" id="how-does-pi-topos-handle-versioning">How does pi-topOS handle versioning?</a></h2>
+<p>See the glossary for more information about the previous versions and their respective names.</p>
+<p>pi-topOS is based on Raspberry Pi OS, which is based on Debian. Debian changes every ~18 months.</p>
+<h1><a class="header" href="#tips--tricks" id="tips--tricks">Tips &amp; Tricks</a></h1>
+<p>This section seeks to offer useful tips for working with pi-topOS, although many of these tips are more broadly useful.</p>
+<h3><a class="header" href="#aliases" id="aliases">Aliases</a></h3>
+<p>Aliases are a great way to shorten the amount you need to write in a terminal if you find yourself running the same commands over and over.</p>
+<p>Read the <a href="https://www.raspberrypi.org/documentation/linux/usage/bashrc.md">Raspberry Pi's documentation</a> for how to set this up.</p>
+<p>Here are some potentially useful suggestions for you to get started with. Obviously, you can change the alias and the command that is called to suit your purposes.
+However, take care not to accidentally use the same name as a command on your system, as it will require additional maintenance effort.</p>
+<h4><a class="header" href="#faster-printing-to-pi-top-4-miniscreen" id="faster-printing-to-pi-top-4-miniscreen">Faster printing to pi-top [4] miniscreen</a></h4>
+<p>This alias will display some text onto a pi-top [4] miniscreen for 10 seconds.</p>
+<p>Alias Line:</p>
+<pre><code class="language-bash">alias pt-write=&quot;pitop oled write -t10&quot;
+</code></pre>
+<p>Usage:</p>
+<pre><code class="language-bash">pt-write &quot;Hello World&quot;
+</code></pre>
 <h1><a class="header" href="#troubleshooting" id="troubleshooting">Troubleshooting</a></h1>
 <p>This section of the documentation aims to provide useful information to assist with identifying issues with pi-topOS.
 Be sure to check out our FAQ section, that aims to address the most common questions/problems that people have.</p>
@@ -198,6 +270,15 @@ Be sure to check out our FAQ section, that aims to address the most common quest
 <p>Shows the current state of pi-top software provided as systemd services, as well as the version of each pi-top software package.</p>
 <h4><a class="header" href="#pi-top-device-information" id="pi-top-device-information">pi-top Device Information</a></h4>
 <p>Provides hardware-level detail about the state of the pi-top hub.</p>
+<h1><a class="header" href="#glossary" id="glossary">Glossary</a></h1>
+<h2><a class="header" href="#sirius" id="sirius">Sirius</a></h2>
+<p>Latest version of pi-topOS.</p>
+<h2><a class="header" href="#polaris" id="polaris">Polaris</a></h2>
+<p>Previous version of pi-topOS.</p>
+<h2><a class="header" href="#buster" id="buster">Buster</a></h2>
+<p>Current version of Debian that pi-topOS Sirius is based on.</p>
+<h2><a class="header" href="#bullseye" id="bullseye">Bullseye</a></h2>
+<p>Upcoming version of Debian that the next version of pi-topOS will be based on.</p>
 <h1><a class="header" href="#contributing-to-pi-topos" id="contributing-to-pi-topos">Contributing to pi-topOS</a></h1>
 <h2><a class="header" href="#want-to-contribute-read-on-for-guidelines-best-practices-links-and-more" id="want-to-contribute-read-on-for-guidelines-best-practices-links-and-more">Want to contribute? Read on for guidelines, best practices, links, and more!</a></h2>
 <p>There are a tonne of ways that an enthusiastic maker, student or professional can contribute!</p>
