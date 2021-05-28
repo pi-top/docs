@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">5.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">6.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">7.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">8.</strong> ✍️ Contributing</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">5.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">6.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">7.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">8.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">9.</strong> ⚙️ Building And Deploying (CI)</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -385,6 +385,41 @@ print(&quot;code here&quot;)
 </code></pre>
 <h3><a class="header" href="#code-submission-pull-request" id="code-submission-pull-request">Code Submission? Pull Request?</a></h3>
 <p>We ❤️ code contributions - see you on <a href="https://github.com/pi-top/">GitHub</a>!</p>
+<h1><a class="header" href="#-building-and-deploying-ci" id="-building-and-deploying-ci">⚙️ Building And Deploying (CI)</a></h1>
+<p>This section outlines how pi-topOS software packages are built and deployed (Continuous Integration).</p>
+<h2><a class="header" href="#building" id="building">Building</a></h2>
+<p>All software installed by pi-top onto pi-topOS is provided as Debian packages, and uses standard Debian packaging tools.</p>
+<p>Because some of our software requires code to be compiled for Raspberry Pi's ARM architecture, and the fact that most
+CI tools do not offer ARM host machines to build on, pi-top packages are built in a Docker container, leveraging Docker's
+<code>buildx</code> functionality. This allows all packages to be built in an environment that emulates ARM hardware, where needed.
+Packages that will work on multiple architectures are built without hardware emulation to speed up builds.</p>
+<p>All public GitHub repositories have GitHub Actions for building (and testing, where relevant).</p>
+<h2><a class="header" href="#deploying" id="deploying">Deploying</a></h2>
+<p>At the moment, pi-top packages are deployed to pi-top's apt repository using a private self-hosted Jenkins instance.
+See the future plans below for how we intend to update the deployment flow.</p>
+<h2><a class="header" href="#future-development-plans" id="future-development-plans">Future development plans</a></h2>
+<ul>
+<li>Push to apt repositories directly from GitHub repositories</li>
+<li>Build pi-topOS using GitHub Actions
+<ul>
+<li>Migrate to Docker builds</li>
+</ul>
+</li>
+<li>Provide repositories for all packages deployed to pi-top's apt repository
+<ul>
+<li>Import source using <code>gbp --import-orig</code></li>
+<li>Watch upstream for updates via <code>debian/watch</code></li>
+<li>Only needs to provide <code>debian/</code> and build CI</li>
+</ul>
+</li>
+<li>Run tests as part of Debian packaging (via <code>debian/rules</code>)</li>
+</ul>
+<h2><a class="header" href="#links" id="links">Links</a></h2>
+<ul>
+<li><a href="https://github.com/pi-top/deb-build-docker">deb-build-docker</a></li>
+<li><a href="https://github.com/pi-top/test-run-docker">test-run-docker</a></li>
+<li><a href="https://github.com/pi-top/pi-top-Python-SDK/tree/master/.github/workflows">SDK GitHub Actions workflows</a></li>
+</ul>
 
                     </main>
 
