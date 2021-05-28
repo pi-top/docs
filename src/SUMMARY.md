@@ -8,3 +8,4 @@
 - [🕵️ Troubleshooting](./troubleshooting.md)
 - [📘 Glossary](./glossary.md)
 - [✍️ Contributing](./contributing.md)
+- [⚙️ Building And Deploying (CI)](./ci.md)
