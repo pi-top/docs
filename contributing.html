@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">5.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">6.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">7.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html" class="active"><strong aria-hidden="true">8.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">9.</strong> ⚙️ Building And Deploying (CI)</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="web_portal.html"><strong aria-hidden="true">5.</strong> 🌀 Web Portal</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">6.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="technical_details.html"><strong aria-hidden="true">7.</strong> 🧑‍🔧 Technical Details</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">8.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">9.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html" class="active"><strong aria-hidden="true">10.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">11.</strong> ⚙️ Building And Deploying (CI)</a></li><li class="chapter-item expanded "><a href="links.html"><strong aria-hidden="true">12.</strong> 🔗 Links</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,13 +136,15 @@
                         </a>
                         
                         
+                        
+
                     </div>
                 </div>
 
                 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -163,13 +165,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#-contributing-to-pi-topos" id="-contributing-to-pi-topos">✍️ Contributing to pi-topOS</a></h1>
-<h2><a class="header" href="#want-to-contribute-read-on-for-guidelines-best-practices-links-and-more" id="want-to-contribute-read-on-for-guidelines-best-practices-links-and-more">Want to contribute? Read on for guidelines, best practices, links, and more!</a></h2>
+                        <h1 id="-contributing-to-pi-topos"><a class="header" href="#-contributing-to-pi-topos">✍️ Contributing to pi-topOS</a></h1>
+<h2 id="want-to-contribute-read-on-for-guidelines-best-practices-links-and-more"><a class="header" href="#want-to-contribute-read-on-for-guidelines-best-practices-links-and-more">Want to contribute? Read on for guidelines, best practices, links, and more!</a></h2>
 <p>There are a tonne of ways that an enthusiastic maker, student or professional can contribute!</p>
-<h3><a class="header" href="#cool-project" id="cool-project">Cool Project?</a></h3>
+<h3 id="cool-project"><a class="header" href="#cool-project">Cool Project?</a></h3>
 <p>Got a cool project to share? Tell us about it in the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a>!</p>
-<h3><a class="header" href="#bug-usability-issue" id="bug-usability-issue">Bug? Usability Issue?</a></h3>
-<h4><a class="header" href="#is-it-a-bug-do-we-know-about-it-is-it-documented" id="is-it-a-bug-do-we-know-about-it-is-it-documented">Is It A Bug? Do We Know About it? Is It Documented?</a></h4>
+<h3 id="want-to-make-things-better"><a class="header" href="#want-to-make-things-better">Want to make things better?</a></h3>
+<p>Have you found a bug, or want to suggest a feature? We'd love to know more.</p>
+<p>Before you get started, it's important that you understand which GitHub repository to file an Issue into.</p>
+<p>Is your bug report or feature request in relation to Python development with pi-top hardware? Check out the pi-top Python SDK and pi-top Python Common Library repositories on GitHub.</p>
+<p>pi-topOS also has other packages that are hosted in GitHub repositories - check out the Technical Details page for more information.</p>
+<p>In most cases, these repositories are <strong>NOT</strong> the right place for a GitHub Issue, as the scope of their functionality is typically more limited than the scope of a usability issue or bug.</p>
+<blockquote>
+<p>⚠️ If you are not sure which GitHub repository is the right one, then try reporting/suggesting to the forum first.</p>
+</blockquote>
+<h4 id="bug-usability-issue"><a class="header" href="#bug-usability-issue">Bug? Usability Issue?</a></h4>
+<h5 id="is-it-a-bug-do-we-know-about-it-is-it-documented"><a class="header" href="#is-it-a-bug-do-we-know-about-it-is-it-documented">Is It A Bug? Do We Know About it? Is It Documented?</a></h5>
 <p>Think you've found a bug? We're keen (though obviously not happy) to hear about it.</p>
 <p>If it seems like quite a fundamental bug (such as an issue with updating), then check out the troubleshooting section first - we might already be aware of it or even have a solution for you! Otherwise, we ask that you check the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a> to see if anyone else is having the issue.</p>
 <blockquote>
@@ -184,12 +195,12 @@
 <p>If you are having a bad time with pi-topOS and its software, then there is a bug.</p>
 <p>If the documentation is confusing or missing, then this is a bug.</p>
 </blockquote>
-<h4><a class="header" href="#where-to-submit-bug-report" id="where-to-submit-bug-report">Where To Submit Bug Report?</a></h4>
+<h5 id="where-to-submit-bug-report"><a class="header" href="#where-to-submit-bug-report">Where To Submit Bug Report?</a></h5>
 <p>Is your bug report in relation to <strong>Python development with pi-top hardware</strong>? Check out the <a href="https://github.com/pi-top/pi-top-Python-SDK">pi-top Python SDK</a> and <a href="https://github.com/pi-top/pi-top-Python-Common-Library">pi-top Python Common Library</a> GitHub repositories.</p>
 <!-- TODO -->
 <!-- Otherwise, check out Technical Details for information about how pi-topOS is organised and how to track down the appropriate GitHub repository for a bug report. Once there, be sure to check to see if there are any existing Issues and/or Pull Requests. -->
 <p>If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.</p>
-<h4><a class="header" href="#how-to-submit-bug-report" id="how-to-submit-bug-report">How To Submit Bug Report?</a></h4>
+<h5 id="how-to-submit-bug-report"><a class="header" href="#how-to-submit-bug-report">How To Submit Bug Report?</a></h5>
 <p>A good, well-documented bug report is the most effective way to help improve the quality of pi-top code.</p>
 <p>Check out this <a href="https://s3-eu-west-1.amazonaws.com/prod.ghost.blog/blog/2018/11/Ultimate-bug-tracking-checklist_Markerio.pdf">one-page checklist</a> outlining how to write a great bug report (or you can read its more thorough <a href="https://marker.io/blog/write-bug-report">accompanying blog post</a>!).</p>
 <!-- TODO -->
@@ -199,16 +210,16 @@
 print(&quot;code here&quot;)
 ```
 </code></pre>
-<h3><a class="header" href="#feature-suggestion" id="feature-suggestion">Feature Suggestion?</a></h3>
-<h4><a class="header" href="#do-we-know-about-it" id="do-we-know-about-it">Do We Know About it?</a></h4>
+<h4 id="feature-suggestion"><a class="header" href="#feature-suggestion">Feature Suggestion?</a></h4>
+<h5 id="do-we-know-about-it"><a class="header" href="#do-we-know-about-it">Do We Know About it?</a></h5>
 <p>Think you've found a bug? We'd love to hear about it!</p>
 <p>First of all, it's important to check the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a> and see if someone else has already had the same, or similar, idea. It is easier to prioritise work that has multiple users requesting the same thing!</p>
-<h4><a class="header" href="#where-to-submit-feature-suggestion" id="where-to-submit-feature-suggestion">Where To Submit Feature Suggestion?</a></h4>
+<h5 id="where-to-submit-feature-suggestion"><a class="header" href="#where-to-submit-feature-suggestion">Where To Submit Feature Suggestion?</a></h5>
 <p>Is your feature request in relation to <strong>Python development with pi-top hardware</strong>? Check out the pi-top Python SDK repository on GitHub.</p>
 <!-- TODO -->
 <!-- Otherwise, check out pi-topOS Technical Details for information about how pi-topOS is organised and how to track down the appropriate GitHub repository for a bug report. Once there, be sure to check to see if there are any existing Issues and/or Pull Requests. -->
 <p>If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.</p>
-<h4><a class="header" href="#how-to-submit-feature-suggestion" id="how-to-submit-feature-suggestion">How To Submit Feature Suggestion?</a></h4>
+<h5 id="how-to-submit-feature-suggestion"><a class="header" href="#how-to-submit-feature-suggestion">How To Submit Feature Suggestion?</a></h5>
 <p><strong>A well-described feature suggestion is a highly effective way to help us understand user needs and tailor pi-topOS to those needs, improving the quality of pi-topOS.</strong></p>
 <p>Provide the following information:</p>
 <ul>
@@ -238,7 +249,7 @@ print(&quot;code here&quot;)
 print(&quot;code here&quot;)
 ```
 </code></pre>
-<h3><a class="header" href="#code-submission-pull-request" id="code-submission-pull-request">Code Submission? Pull Request?</a></h3>
+<h4 id="code-submission-pull-request"><a class="header" href="#code-submission-pull-request">Code Submission? Pull Request?</a></h4>
 <p>We ❤️ code contributions - see you on <a href="https://github.com/pi-top/">GitHub</a>!</p>
 
                     </main>

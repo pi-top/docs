@@ -3,9 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>pi-topOS</title>
-        
-        <meta name="robots" content="noindex" />
+        <title>🧑‍🔧 Technical Details - pi-topOS</title>
         
         
 
@@ -97,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="web_portal.html"><strong aria-hidden="true">5.</strong> 🌀 Web Portal</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">6.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="technical_details.html"><strong aria-hidden="true">7.</strong> 🧑‍🔧 Technical Details</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">8.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">9.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">10.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">11.</strong> ⚙️ Building And Deploying (CI)</a></li><li class="chapter-item expanded "><a href="links.html"><strong aria-hidden="true">12.</strong> 🔗 Links</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="web_portal.html"><strong aria-hidden="true">5.</strong> 🌀 Web Portal</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html"><strong aria-hidden="true">6.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="technical_details.html" class="active"><strong aria-hidden="true">7.</strong> 🧑‍🔧 Technical Details</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">8.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">9.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">10.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">11.</strong> ⚙️ Building And Deploying (CI)</a></li><li class="chapter-item expanded "><a href="links.html"><strong aria-hidden="true">12.</strong> 🔗 Links</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -167,151 +165,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="pi-topos---official-documentation"><a class="header" href="#pi-topos---official-documentation">pi-topOS - Official Documentation</a></h1>
-<blockquote>
-<p><strong>Please note that this documentation is currently under active construction.</strong>
-We ask that you bear with us while we work to assemble this document!</p>
-</blockquote>
-<p>Hello and welcome to pi-topOS's official documentation.</p>
-<p>This is an evolving document that seeks to describe the current state of pi-topOS.
-As updates are released, the way that the OS behaves will change, and so too will this document.</p>
-<p>Where there is notable information about earlier versions (such as serious bugs and usability issues), this document
-will seek to provide useful information.</p>
-<blockquote>
-<p>Unless you have a very specific issue, you will need to make sure that you are using the latest version of pi-topOS
-and its software. Otherwise, you may find that this documentation does not accurately reflect what you are actually
-using.</p>
-</blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-overview"><a class="header" href="#-overview">👁 Overview</a></h1>
-<p>pi-topOS is the recommended way to use your pi-top.</p>
-<p>pi-topOS is built on top of Raspberry Pi OS (formerly Raspbian), so a lot of things are identical.
-However there are some differences.</p>
-<p>The underlying operating system (Raspberry Pi OS) handles much of the backbone functionality that pi-topOS depends on -
-things like the desktop environment, software update management, etc.</p>
-<blockquote>
-<p>pi-topOS developers are not directly involved in the development of much of the low-level core features of pi-topOS.
-Rather, pi-topOS is 'downstream', and therefore directly benefits from this work done by the Raspberry Pi Foundation.</p>
-<p>⚠️ In rare circumstances, unexpected changes to Raspberry Pi OS can cause breaking changes to pi-topOS.
-Fortunately, this is a rare occurrence!</p>
-</blockquote>
-<h2 id="so-pi-topos-is-built-on-top-of-raspberry-pi-os-whats-different"><a class="header" href="#so-pi-topos-is-built-on-top-of-raspberry-pi-os-whats-different">So pi-topOS is built on top of Raspberry Pi OS. What's different?</a></h2>
-<p>pi-topOS extends upon Raspberry Pi OS to add additional functionality and usability improvements:</p>
-<ul>
-<li>Plug-and-Play functionality with pi-top hardware</li>
-<li>Modifying the user interface (including theming)</li>
-<li>Notification system</li>
-<li>Automatic software updater</li>
-<li>Simplified user onboarding/OS setup</li>
-<li>Additional settings for pi-top hardware</li>
-<li>‘About’ page to show key information about the OS that is installed</li>
-</ul>
-<blockquote>
-<p>For more information about pi-topOS, check out the technical details subsection of the pi-topOS knowledge base</p>
-</blockquote>
-<h2 id="what-if-i-want-to-use-raspberry-pi-os"><a class="header" href="#what-if-i-want-to-use-raspberry-pi-os">What if I want to use Raspberry Pi OS?</a></h2>
-<p>Some users prefer to stick to Raspberry Pi OS and install the minimal device drivers to get Plug-and-Play
-functionality with pi-top hardware without the additional customisations of pi-topOS.</p>
-<p>If you'd like to use a pi-top device with Raspberry Pi OS, take a look at this article.</p>
-<h2 id="what-if-i-want-to-use-another-operating-system"><a class="header" href="#what-if-i-want-to-use-another-operating-system">What if I want to use another operating system?</a></h2>
-<blockquote>
-<p>⚠️ <strong>Other operating systems are not supported.</strong></p>
-</blockquote>
-<p>For a pi-top device to work properly, communication is required between the Raspberry Pi and the pi-top's onboard
-&quot;Hub&quot; (microcontroller unit, or MCU).
-At this time, the software for working with a pi-top is only available for Raspberry Pi OS-based systems.</p>
-<p>Without this communication, all pi-top devices will be unable to power off correctly.
-The power button will need to be held in place for longer to force a hard shutdown, which is dangerous and could cause
-serious SD card corruption.
-Shutting down the Raspberry Pi via a 'soft shutdown' (asking the operating system to shut down, such as via the start
-menu) will turn off the Raspberry Pi, but the pi-top device will continue to be powered on.</p>
-<p>Additionally, hardware will not work as intended - for instance, display brightness on pi-top laptops and the
-miniscreen on the pi-top [4].
-For pi-top devices with an onboard battery, it will not be possible to determine its state.</p>
-<blockquote>
-<p>If you are using an unsupported OS, it is recommended that you power off your Raspberry Pi via the start menu and wait
-until the Raspberry Pi has halted before powering off the pi-top hardware via the hardware power button.</p>
-</blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-faqs"><a class="header" href="#-faqs">🙋 FAQs</a></h1>
-<h2 id="why-cant-i-update"><a class="header" href="#why-cant-i-update">Why can't I update?</a></h2>
-<p>Check out our <a href="https://knowledgebase.pi-top.com/knowledge/error-updating-sirius">knowledge base article</a> for guidance on updating issues.</p>
-<h2 id="why-cant-i-connect-to-further"><a class="header" href="#why-cant-i-connect-to-further">Why can't I connect to Further?</a></h2>
-<p>Check out our <a href="https://knowledgebase.pi-top.com/knowledge/why-cant-i-connect-to-further">knowledge base article</a> for guidance on connecting to Further.</p>
-<h2 id="why-cant-i-use-port-80"><a class="header" href="#why-cant-i-use-port-80">Why can't I use port 80?</a></h2>
-<p>Check out our <a href="https://knowledgebase.pi-top.com/knowledge/pi-topos-port-80">knowledge base article</a> for guidance on working with TCP port 80.</p>
-<h2 id="why-does-my-screen-resolution-keep-resetting-on-reboot"><a class="header" href="#why-does-my-screen-resolution-keep-resetting-on-reboot">Why does my screen resolution keep resetting on reboot?</a></h2>
-<p><code>autorandr</code>, HDMI forced output, </p>
-<h2 id="how-does-pi-topos-handle-versioning"><a class="header" href="#how-does-pi-topos-handle-versioning">How does pi-topOS handle versioning?</a></h2>
-<p>See the glossary for more information about the previous versions and their respective names.</p>
-<p>pi-topOS is based on Raspberry Pi OS, which is based on Debian. Debian changes every ~18 months.</p>
-<h2 id="why-is-pi-topspeaker-not-mentionedincluded-in-the-pi-top-python-sdk"><a class="header" href="#why-is-pi-topspeaker-not-mentionedincluded-in-the-pi-top-python-sdk">Why is pi-topSPEAKER not mentioned/included in the pi-top Python SDK?</a></h2>
-<p>pi-topSPEAKERs are automatically configured and initialized via <code>pt-device-manager</code>. Because there are no desirable programmatic hardware settings, there is no exposed public API for this hardware.</p>
-<h2 id="why-does-my-pi-top-4-require-a-modified-eeprom"><a class="header" href="#why-does-my-pi-top-4-require-a-modified-eeprom">Why does my pi-top [4] require a modified EEPROM?</a></h2>
-<p>Raspberry Pi 4 boards earlier than the 1.4 PCB revision (All 8GB models have this, and this is now also the default for 2GB and 4GB models) require a modified EEPROM to power off correctly.</p>
-<p>These newer boards hold the external reset until it is released by software (SPI bootloader) when the watchdog/soft reset occurs.</p>
-<p>This means that the 5V rail on the USB bus will be off until the second stage bootloader has initialised or if halting it will stay off. On previous board revisions, this was not under software controls so 5V would be initialised when the XHCI/VLI automatically initialised, which could happen before halt.</p>
-<p>Therefore, it is necessary to update the Raspberry Pi's internal EEPROM firmware to behave correctly. The following changes are made to the EEPROM:</p>
-<pre><code class="language-shell">WAKE_ON_GPIO=0
-POWER_OFF_ON_HALT=1
-</code></pre>
-<blockquote>
-<p>⚠️ There is a very small risk of damage to Raspberry Pi HATs where 5V is powered but 3V3 is off (unless the HAT is designed to support that power configuration). Check with your HAT manufacturer to find out more.</p>
-</blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-controlling-pi-top-hardware"><a class="header" href="#-controlling-pi-top-hardware">🤖 Controlling pi-top Hardware</a></h1>
-<p>There are many ways to interact with hardware. However, pi-top have worked hard to offer a coherent programming experience for all.
-Consequently, this has led to the development of software development kits (SDKs).</p>
-<p>Currently, it is possible to interact with a pi-top with 2 different SDKs:</p>
-<ul>
-<li><a href="https://github.com/pi-top/pi-top-Python-SDK">Python SDK</a></li>
-<li><a href="https://github.com/pi-top/pi-top-4-.NET-SDK">.NET SDK</a></li>
-</ul>
-<p>Check out the examples for each:</p>
-<ul>
-<li>Python examples
-<ul>
-<li><a href="http://docs.pi-top.com/en/stable/recipes_api.html">Documentation Recipes</a></li>
-<li><a href="https://github.com/pi-top/pi-top-4-.NET">In GitHub Repository</a></li>
-</ul>
-</li>
-<li><a href="https://github.com/pi-top/pi-top-4-.NET">.NET samples</a></li>
-</ul>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-web-portal"><a class="header" href="#-web-portal">🌀 Web Portal</a></h1>
-<h2 id="what-is-web-portal"><a class="header" href="#what-is-web-portal">What is web portal?</a></h2>
-<p>Web Portal is a web server application that serves up webpages when the IP address or hostname of the machine running the software is accessed via a web browser.</p>
-<p>This provides a convenient way of accessing the device without the need for any of the following:</p>
-<ul>
-<li>spare mouse and/or keyboard</li>
-<li>a display</li>
-</ul>
-<p>Instead, all you need is a device that can connect to your device via a web browser.
-The additional benefit of this is that it does not require a dedicated VNC or SSH client to access the device.</p>
-<h2 id="what-is-it-currently-used-for"><a class="header" href="#what-is-it-currently-used-for">What is it currently used for?</a></h2>
-<p>Right now, it serves up webpages for user onboarding (OS setup, etc.).</p>
-<h2 id="what-will-it-do-in-the-future"><a class="header" href="#what-will-it-do-in-the-future">What will it do in the future?</a></h2>
-<p>As the application continues to mature, we intend to build all of our GUI interfaces as web apps that are served via the web portal backend. Applications on the desktop will open in a native-looking window that points to the local server to present the GUI and handle user interaction.</p>
-<p>This includes the OS updater, which currently uses a terminal window - an approach that can cause unintended issues for users.</p>
-<h2 id="how-might-this-affect-what-i-can-do-on-pi-topos"><a class="header" href="#how-might-this-affect-what-i-can-do-on-pi-topos">How might this affect what I can do on pi-topOS?</a></h2>
-<p>The web portal requires TCP port 80. If you require port 80, then you will need to disable the web portal:</p>
-<pre><code class="language-sh">sudo systemctl disable pt-web-portal
-</code></pre>
-<blockquote>
-<p>⚠️ This will disable all of pi-top's own graphical applications that run on the desktop.</p>
-</blockquote>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-tips--tricks"><a class="header" href="#-tips--tricks">💁 Tips &amp; Tricks</a></h1>
-<p>This section seeks to offer useful tips for working with pi-topOS, although many of these tips are more broadly useful.</p>
-<h3 id="aliases"><a class="header" href="#aliases">Aliases</a></h3>
-<p>Aliases are a great way to shorten the amount you need to write in a terminal if you find yourself running the same commands over and over.</p>
-<p>Read the <a href="https://www.raspberrypi.org/documentation/linux/usage/bashrc.md">Raspberry Pi's documentation</a> for how to set this up.</p>
-<p>Here are some potentially useful suggestions for you to get started with. Obviously, you can change the alias and the command that is called to suit your purposes.
-However, take care not to accidentally use the same name as a command on your system, as it will require additional maintenance effort.</p>
-<h4 id="faster-printing-to-pi-top-4-miniscreen"><a class="header" href="#faster-printing-to-pi-top-4-miniscreen">Faster printing to pi-top [4] miniscreen</a></h4>
-<p>This alias will display some text onto a pi-top [4] miniscreen for 10 seconds.</p>
-<p>Alias Line:</p>
-<pre><code class="language-bash">alias pt-write=&quot;pitop oled write -t10&quot;
-</code></pre>
-<p>Usage:</p>
-<pre><code class="language-bash">pt-write &quot;Hello World&quot;
-</code></pre>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="technical-details"><a class="header" href="#technical-details">Technical Details</a></h1>
+                        <h1 id="technical-details"><a class="header" href="#technical-details">Technical Details</a></h1>
 <h2 id="dependency-graph"><a class="header" href="#dependency-graph">Dependency Graph</a></h2>
 <p>Below is a modified dependency graph of the <code>pt-os</code> top-level package that is installed on top of Raspberry Pi OS to produce pi-topOS:</p>
 <div><!-- Generated by graphviz version 2.40.1 (20161225.0304)
@@ -406,182 +260,21 @@ Setting default locale and keyboard layout to US</li>
 </li>
 </ul>
 <p>TODO: communication protocols (e.g. ZMQ, udev, systemd), which modules require them, why, and how to handle strange &quot;gotchas&quot;.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-troubleshooting"><a class="header" href="#-troubleshooting">🕵️ Troubleshooting</a></h1>
-<p>This section of the documentation aims to provide useful information to assist with identifying issues with pi-topOS.
-Be sure to check out our FAQ section, that aims to address the most common questions/problems that people have.</p>
-<h2 id="collecting-and-reviewing-system-information"><a class="header" href="#collecting-and-reviewing-system-information">Collecting and Reviewing System Information</a></h2>
-<p>Find out how to collect useful information about your pi-top device's operating system and hardware state, and understand how to decipher/use it.</p>
-<h3 id="collecting-system-information"><a class="header" href="#collecting-system-information">Collecting System Information</a></h3>
-<p>On pi-topOS you can run the following command:</p>
-<pre><code class="language-bash">pi-top support health_check
-</code></pre>
-<p>This will generate some potentially useful information about the state of the device.</p>
-<blockquote>
-<p>⚠️ <strong>WARNING</strong>: It is recommended that you review this data carefully before passing it to someone else - it may reveal personal information about your setup that you may not wish for others to know about.</p>
-<p>Do not give this information to anyone you do not trust without first checking its contents.</p>
-</blockquote>
-<h3 id="interpreting-system-information"><a class="header" href="#interpreting-system-information">Interpreting System Information</a></h3>
-<h4 id="raspberry-pi-device-information"><a class="header" href="#raspberry-pi-device-information">Raspberry Pi Device Information</a></h4>
-<p>Identifies the Raspberry Pi model type, and provides information about the state of the Raspberry Pi device, such as bootloader configuration, EEPROM version and GPU information.</p>
-<h4 id="pi-top-devices"><a class="header" href="#pi-top-devices">pi-top Devices</a></h4>
-<p>Identifies what type of pi-top device the Raspberry Pi identifies that it is communicating with, and if any pi-top peripherals are connected or not.</p>
-<h4 id="system-information"><a class="header" href="#system-information">System Information</a></h4>
-<p>Provides information about the active kernel, as well as pi-topOS build information.</p>
-<h4 id="interfacesboot-settingsmisc-via-raspi-config"><a class="header" href="#interfacesboot-settingsmisc-via-raspi-config">Interfaces/Boot Settings/Misc (via raspi-config)</a></h4>
-<p>Shows information that can be determined via the 'raspi-config' tool.</p>
-<h4 id="network-settings"><a class="header" href="#network-settings">Network Settings</a></h4>
-<p>Shows key network information, such as hostname, WiFi country, interfaces, IP addresses, etc.</p>
-<h4 id="pi-top-software-information"><a class="header" href="#pi-top-software-information">pi-top Software Information</a></h4>
-<p>Shows the current state of pi-top software provided as systemd services, as well as the version of each pi-top software package.</p>
-<h4 id="pi-top-device-information"><a class="header" href="#pi-top-device-information">pi-top Device Information</a></h4>
-<p>Provides hardware-level detail about the state of the pi-top hub.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-glossary"><a class="header" href="#-glossary">📘 Glossary</a></h1>
-<h2 id="sirius"><a class="header" href="#sirius">Sirius</a></h2>
-<p>Latest version of pi-topOS.</p>
-<h2 id="polaris"><a class="header" href="#polaris">Polaris</a></h2>
-<p>Previous version of pi-topOS.</p>
-<h2 id="buster"><a class="header" href="#buster">Buster</a></h2>
-<p>Current version of Debian that pi-topOS Sirius is based on.</p>
-<h2 id="bullseye"><a class="header" href="#bullseye">Bullseye</a></h2>
-<p>Upcoming version of Debian that the next version of pi-topOS will be based on.</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-contributing-to-pi-topos"><a class="header" href="#-contributing-to-pi-topos">✍️ Contributing to pi-topOS</a></h1>
-<h2 id="want-to-contribute-read-on-for-guidelines-best-practices-links-and-more"><a class="header" href="#want-to-contribute-read-on-for-guidelines-best-practices-links-and-more">Want to contribute? Read on for guidelines, best practices, links, and more!</a></h2>
-<p>There are a tonne of ways that an enthusiastic maker, student or professional can contribute!</p>
-<h3 id="cool-project"><a class="header" href="#cool-project">Cool Project?</a></h3>
-<p>Got a cool project to share? Tell us about it in the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a>!</p>
-<h3 id="want-to-make-things-better"><a class="header" href="#want-to-make-things-better">Want to make things better?</a></h3>
-<p>Have you found a bug, or want to suggest a feature? We'd love to know more.</p>
-<p>Before you get started, it's important that you understand which GitHub repository to file an Issue into.</p>
-<p>Is your bug report or feature request in relation to Python development with pi-top hardware? Check out the pi-top Python SDK and pi-top Python Common Library repositories on GitHub.</p>
-<p>pi-topOS also has other packages that are hosted in GitHub repositories - check out the Technical Details page for more information.</p>
-<p>In most cases, these repositories are <strong>NOT</strong> the right place for a GitHub Issue, as the scope of their functionality is typically more limited than the scope of a usability issue or bug.</p>
-<blockquote>
-<p>⚠️ If you are not sure which GitHub repository is the right one, then try reporting/suggesting to the forum first.</p>
-</blockquote>
-<h4 id="bug-usability-issue"><a class="header" href="#bug-usability-issue">Bug? Usability Issue?</a></h4>
-<h5 id="is-it-a-bug-do-we-know-about-it-is-it-documented"><a class="header" href="#is-it-a-bug-do-we-know-about-it-is-it-documented">Is It A Bug? Do We Know About it? Is It Documented?</a></h5>
-<p>Think you've found a bug? We're keen (though obviously not happy) to hear about it.</p>
-<p>If it seems like quite a fundamental bug (such as an issue with updating), then check out the troubleshooting section first - we might already be aware of it or even have a solution for you! Otherwise, we ask that you check the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a> to see if anyone else is having the issue.</p>
-<blockquote>
-<p>If you are running Python code and getting an Exception, this may not be a bug.</p>
-</blockquote>
-<blockquote>
-<p>If you are not confident in what the issue is, then please reach out on the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a>!</p>
-</blockquote>
-<p>Have you checked the documentation? For example, the <a href="https://github.com/pi-top/pi-top-Python-SDK">pi-top Python SDK</a> has <a href="http://docs.pi-top.com/">documentation</a>.</p>
-<p>Still think you've got a bug? Let's figure out the best place to write up your bug report.</p>
-<blockquote>
-<p>If you are having a bad time with pi-topOS and its software, then there is a bug.</p>
-<p>If the documentation is confusing or missing, then this is a bug.</p>
-</blockquote>
-<h5 id="where-to-submit-bug-report"><a class="header" href="#where-to-submit-bug-report">Where To Submit Bug Report?</a></h5>
-<p>Is your bug report in relation to <strong>Python development with pi-top hardware</strong>? Check out the <a href="https://github.com/pi-top/pi-top-Python-SDK">pi-top Python SDK</a> and <a href="https://github.com/pi-top/pi-top-Python-Common-Library">pi-top Python Common Library</a> GitHub repositories.</p>
-<!-- TODO -->
-<!-- Otherwise, check out Technical Details for information about how pi-topOS is organised and how to track down the appropriate GitHub repository for a bug report. Once there, be sure to check to see if there are any existing Issues and/or Pull Requests. -->
-<p>If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.</p>
-<h5 id="how-to-submit-bug-report"><a class="header" href="#how-to-submit-bug-report">How To Submit Bug Report?</a></h5>
-<p>A good, well-documented bug report is the most effective way to help improve the quality of pi-top code.</p>
-<p>Check out this <a href="https://s3-eu-west-1.amazonaws.com/prod.ghost.blog/blog/2018/11/Ultimate-bug-tracking-checklist_Markerio.pdf">one-page checklist</a> outlining how to write a great bug report (or you can read its more thorough <a href="https://marker.io/blog/write-bug-report">accompanying blog post</a>!).</p>
-<!-- TODO -->
-<!-- > Check out Collecting and Reviewing System Information to find out more about how to collect information about your system. -->
-<p>Use <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">GitHub's Markdown</a> to style your Issue. For example, if you are providing a Python code snippet, write it like so:</p>
-<pre><code>```python
-print(&quot;code here&quot;)
-```
-</code></pre>
-<h4 id="feature-suggestion"><a class="header" href="#feature-suggestion">Feature Suggestion?</a></h4>
-<h5 id="do-we-know-about-it"><a class="header" href="#do-we-know-about-it">Do We Know About it?</a></h5>
-<p>Think you've found a bug? We'd love to hear about it!</p>
-<p>First of all, it's important to check the <a href="https://forum.pi-top.com/c/pi-top-software">forum</a> and see if someone else has already had the same, or similar, idea. It is easier to prioritise work that has multiple users requesting the same thing!</p>
-<h5 id="where-to-submit-feature-suggestion"><a class="header" href="#where-to-submit-feature-suggestion">Where To Submit Feature Suggestion?</a></h5>
-<p>Is your feature request in relation to <strong>Python development with pi-top hardware</strong>? Check out the pi-top Python SDK repository on GitHub.</p>
-<!-- TODO -->
-<!-- Otherwise, check out pi-topOS Technical Details for information about how pi-topOS is organised and how to track down the appropriate GitHub repository for a bug report. Once there, be sure to check to see if there are any existing Issues and/or Pull Requests. -->
-<p>If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.</p>
-<h5 id="how-to-submit-feature-suggestion"><a class="header" href="#how-to-submit-feature-suggestion">How To Submit Feature Suggestion?</a></h5>
-<p><strong>A well-described feature suggestion is a highly effective way to help us understand user needs and tailor pi-topOS to those needs, improving the quality of pi-topOS.</strong></p>
-<p>Provide the following information:</p>
-<ul>
-<li>Problem or Possibility
-<ul>
-<li>Concise summary of the problem that this suggestion would solve, or the possibility it would enable (For example: &quot;I'm always frustrated when [...]&quot;)</li>
-</ul>
-</li>
-<li>Proposed Solution
-<ul>
-<li>Description of the enhancement that you would like to see</li>
-</ul>
-</li>
-<li>Alternative Solutions
-<ul>
-<li>Description of any alternative solutions or features you've considered, if relevant</li>
-</ul>
-</li>
-<li>Additional Context
-<ul>
-<li>Any other context or screenshots about the suggestion here.</li>
-</ul>
-</li>
-</ul>
-<p>Use <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">GitHub's Markdown</a> to style your Issue. For example, if you are providing a Python code snippet, write it like so:</p>
-<pre><code>```python
-print(&quot;code here&quot;)
-```
-</code></pre>
-<h4 id="code-submission-pull-request"><a class="header" href="#code-submission-pull-request">Code Submission? Pull Request?</a></h4>
-<p>We ❤️ code contributions - see you on <a href="https://github.com/pi-top/">GitHub</a>!</p>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-building-and-deploying-ci"><a class="header" href="#-building-and-deploying-ci">⚙️ Building And Deploying (CI)</a></h1>
-<p>This section outlines how pi-topOS software packages are built and deployed (Continuous Integration).</p>
-<h2 id="building"><a class="header" href="#building">Building</a></h2>
-<p>All software installed by pi-top onto pi-topOS is provided as Debian packages, and uses standard Debian packaging tools.</p>
-<p>Because some of our software requires code to be compiled for Raspberry Pi's ARM architecture, and the fact that most
-CI tools do not offer ARM host machines to build on, pi-top packages are built in a Docker container, leveraging Docker's
-<code>buildx</code> functionality. This allows all packages to be built in an environment that emulates ARM hardware, where needed.
-Packages that will work on multiple architectures are built without hardware emulation to speed up builds.</p>
-<p>All public GitHub repositories have GitHub Actions for building (and testing, where relevant).</p>
-<h2 id="deploying"><a class="header" href="#deploying">Deploying</a></h2>
-<p>At the moment, pi-top packages are deployed to pi-top's apt repository using a private self-hosted Jenkins instance.
-See the future plans below for how we intend to update the deployment flow.</p>
-<h2 id="future-development-plans"><a class="header" href="#future-development-plans">Future development plans</a></h2>
-<ul>
-<li>Push to apt repositories directly from GitHub repositories</li>
-<li>Build pi-topOS using GitHub Actions
-<ul>
-<li>Migrate to Docker builds</li>
-</ul>
-</li>
-<li>Provide repositories for all packages deployed to pi-top's apt repository
-<ul>
-<li>Import source using <code>gbp --import-orig</code></li>
-<li>Watch upstream for updates via <code>debian/watch</code></li>
-<li>Only needs to provide <code>debian/</code> and build CI</li>
-</ul>
-</li>
-<li>Run tests as part of Debian packaging (via <code>debian/rules</code>)</li>
-</ul>
-<h2 id="links"><a class="header" href="#links">Links</a></h2>
-<ul>
-<li><a href="https://github.com/pi-top/deb-build-docker">deb-build-docker</a></li>
-<li><a href="https://github.com/pi-top/test-run-docker">test-run-docker</a></li>
-<li><a href="https://github.com/pi-top/pi-top-Python-SDK/tree/master/.github/workflows">SDK GitHub Actions workflows</a></li>
-</ul>
-<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="-links"><a class="header" href="#-links">🔗 Links</a></h1>
-<h2 id="pi-top-links"><a class="header" href="#pi-top-links">pi-top Links</a></h2>
-<ul>
-<li><a href="https://knowledgebase.pi-top.com/knowledge/">Knowledge Base</a></li>
-<li><a href="https://forum.pi-top.com/">Forum</a></li>
-</ul>
-<h2 id="raspberry-pi-links"><a class="header" href="#raspberry-pi-links">Raspberry Pi Links</a></h2>
-<ul>
-<li><a href="https://www.raspberrypi.org/documentation/">Raspberry Pi Technical Documentation</a></li>
-</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="tips_and_tricks.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
+                        
+                            <a rel="next" href="troubleshooting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -591,7 +284,15 @@ See the future plans below for how we intend to update the deployment flow.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="tips_and_tricks.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
+                
+                    <a rel="next" href="troubleshooting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -624,14 +325,6 @@ See the future plans below for how we intend to update the deployment flow.</p>
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        
         
 
     </body>

@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html" class="active"><strong aria-hidden="true">5.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">6.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">7.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">8.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">9.</strong> ⚙️ Building And Deploying (CI)</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 🏠 Home</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">2.</strong> 👁 Overview</a></li><li class="chapter-item expanded "><a href="faq.html"><strong aria-hidden="true">3.</strong> 🙋 FAQ</a></li><li class="chapter-item expanded "><a href="sdk.html"><strong aria-hidden="true">4.</strong> 🤖 Controlling pi-top Hardware</a></li><li class="chapter-item expanded "><a href="web_portal.html"><strong aria-hidden="true">5.</strong> 🌀 Web Portal</a></li><li class="chapter-item expanded "><a href="tips_and_tricks.html" class="active"><strong aria-hidden="true">6.</strong> 💁 Tips &amp; Tricks</a></li><li class="chapter-item expanded "><a href="technical_details.html"><strong aria-hidden="true">7.</strong> 🧑‍🔧 Technical Details</a></li><li class="chapter-item expanded "><a href="troubleshooting.html"><strong aria-hidden="true">8.</strong> 🕵️ Troubleshooting</a></li><li class="chapter-item expanded "><a href="glossary.html"><strong aria-hidden="true">9.</strong> 📘 Glossary</a></li><li class="chapter-item expanded "><a href="contributing.html"><strong aria-hidden="true">10.</strong> ✍️ Contributing</a></li><li class="chapter-item expanded "><a href="ci.html"><strong aria-hidden="true">11.</strong> ⚙️ Building And Deploying (CI)</a></li><li class="chapter-item expanded "><a href="links.html"><strong aria-hidden="true">12.</strong> 🔗 Links</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,13 +136,15 @@
                         </a>
                         
                         
+                        
+
                     </div>
                 </div>
 
                 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -163,14 +165,14 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#-tips--tricks" id="-tips--tricks">💁 Tips &amp; Tricks</a></h1>
+                        <h1 id="-tips--tricks"><a class="header" href="#-tips--tricks">💁 Tips &amp; Tricks</a></h1>
 <p>This section seeks to offer useful tips for working with pi-topOS, although many of these tips are more broadly useful.</p>
-<h3><a class="header" href="#aliases" id="aliases">Aliases</a></h3>
+<h3 id="aliases"><a class="header" href="#aliases">Aliases</a></h3>
 <p>Aliases are a great way to shorten the amount you need to write in a terminal if you find yourself running the same commands over and over.</p>
 <p>Read the <a href="https://www.raspberrypi.org/documentation/linux/usage/bashrc.md">Raspberry Pi's documentation</a> for how to set this up.</p>
 <p>Here are some potentially useful suggestions for you to get started with. Obviously, you can change the alias and the command that is called to suit your purposes.
 However, take care not to accidentally use the same name as a command on your system, as it will require additional maintenance effort.</p>
-<h4><a class="header" href="#faster-printing-to-pi-top-4-miniscreen" id="faster-printing-to-pi-top-4-miniscreen">Faster printing to pi-top [4] miniscreen</a></h4>
+<h4 id="faster-printing-to-pi-top-4-miniscreen"><a class="header" href="#faster-printing-to-pi-top-4-miniscreen">Faster printing to pi-top [4] miniscreen</a></h4>
 <p>This alias will display some text onto a pi-top [4] miniscreen for 10 seconds.</p>
 <p>Alias Line:</p>
 <pre><code class="language-bash">alias pt-write=&quot;pitop oled write -t10&quot;
@@ -184,13 +186,13 @@ However, take care not to accidentally use the same name as a command on your sy
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="sdk.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="web_portal.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="troubleshooting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="technical_details.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -202,13 +204,13 @@ However, take care not to accidentally use the same name as a command on your sy
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="sdk.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="web_portal.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="troubleshooting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="technical_details.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
