@@ -7,8 +7,21 @@ There are a tonne of ways that an enthusiastic maker, student or professional ca
 ### Cool Project?
 Got a cool project to share? Tell us about it in the [forum](https://forum.pi-top.com/c/pi-top-software)!
 
-### Bug? Usability Issue?
-#### Is It A Bug? Do We Know About it? Is It Documented?
+### Want to make things better?
+Have you found a bug, or want to suggest a feature? We'd love to know more.
+
+Before you get started, it's important that you understand which GitHub repository to file an Issue into.
+
+Is your bug report or feature request in relation to Python development with pi-top hardware? Check out the pi-top Python SDK and pi-top Python Common Library repositories on GitHub.
+
+pi-topOS also has other packages that are hosted in GitHub repositories - check out the Technical Details page for more information.
+
+In most cases, these repositories are **NOT** the right place for a GitHub Issue, as the scope of their functionality is typically more limited than the scope of a usability issue or bug.
+
+> ⚠️ If you are not sure which GitHub repository is the right one, then try reporting/suggesting to the forum first.
+
+#### Bug? Usability Issue?
+##### Is It A Bug? Do We Know About it? Is It Documented?
 Think you've found a bug? We're keen (though obviously not happy) to hear about it.
 
 If it seems like quite a fundamental bug (such as an issue with updating), then check out the troubleshooting section first - we might already be aware of it or even have a solution for you! Otherwise, we ask that you check the [forum](https://forum.pi-top.com/c/pi-top-software) to see if anyone else is having the issue.
@@ -25,7 +38,7 @@ Still think you've got a bug? Let's figure out the best place to write up your b
 >
 > If the documentation is confusing or missing, then this is a bug.
 
-#### Where To Submit Bug Report?
+##### Where To Submit Bug Report?
 Is your bug report in relation to **Python development with pi-top hardware**? Check out the [pi-top Python SDK](https://github.com/pi-top/pi-top-Python-SDK) and [pi-top Python Common Library](https://github.com/pi-top/pi-top-Python-Common-Library) GitHub repositories.
 
 <!-- TODO -->
@@ -33,7 +46,7 @@ Is your bug report in relation to **Python development with pi-top hardware**? C
 
 If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.
 
-#### How To Submit Bug Report?
+##### How To Submit Bug Report?
 A good, well-documented bug report is the most effective way to help improve the quality of pi-top code.
 
 Check out this [one-page checklist](https://s3-eu-west-1.amazonaws.com/prod.ghost.blog/blog/2018/11/Ultimate-bug-tracking-checklist_Markerio.pdf) outlining how to write a great bug report (or you can read its more thorough [accompanying blog post](https://marker.io/blog/write-bug-report)!).
@@ -49,13 +62,13 @@ print("code here")
 ```
 ````
 
-### Feature Suggestion?
-#### Do We Know About it?
+#### Feature Suggestion?
+##### Do We Know About it?
 Think you've found a bug? We'd love to hear about it!
 
 First of all, it's important to check the [forum](https://forum.pi-top.com/c/pi-top-software) and see if someone else has already had the same, or similar, idea. It is easier to prioritise work that has multiple users requesting the same thing!
 
-#### Where To Submit Feature Suggestion?
+##### Where To Submit Feature Suggestion?
 Is your feature request in relation to **Python development with pi-top hardware**? Check out the pi-top Python SDK repository on GitHub.
 
 <!-- TODO -->
@@ -63,7 +76,7 @@ Is your feature request in relation to **Python development with pi-top hardware
 
 If you are unsure about where to post the issue, then create a forum post about the issue you are having so that someone can help you direct you to the best place to submit the Issue.
 
-#### How To Submit Feature Suggestion?
+##### How To Submit Feature Suggestion?
 **A well-described feature suggestion is a highly effective way to help us understand user needs and tailor pi-topOS to those needs, improving the quality of pi-topOS.**
 
 Provide the following information:
@@ -85,5 +98,5 @@ print("code here")
 ```
 ````
 
-### Code Submission? Pull Request?
+#### Code Submission? Pull Request?
 We ❤️ code contributions - see you on [GitHub](https://github.com/pi-top/)!

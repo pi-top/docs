@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: docker run --rm -v $(pwd):/data -u $(id -u):$(id -g) hrektts/mdbook mdbook build
+
+      - run: docker run --rm -v $(pwd):/data -u $(id -u):$(id -g) pitop/mdbook mdbook build
+
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
