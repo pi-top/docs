@@ -11,7 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: |
+      - name: Install dependencies
+        run: |
           sudo apt-get update
           sudo apt-get install -y graphviz cargo
 
@@ -25,11 +26,14 @@ jobs:
           cargo install --force --path .
 
           cd ${{ github.workspace }}/
-          mdbook build
+
+      - name: Build
+        run: mdbook build
 
       # - run: docker run --rm -v $(pwd):/data -u $(id -u):$(id -g) pitop/mdbook mdbook build
 
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Push
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book
