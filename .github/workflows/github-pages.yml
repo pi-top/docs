@@ -11,7 +11,23 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: docker run --rm -v $(pwd):/data -u $(id -u):$(id -g) pitop/mdbook mdbook build
+      - run: |
+        sudo apt-get update
+        sudo apt-get install -y graphviz rust
+
+        cargo install mdbook --vers 0.4.9
+
+        cd /tmp
+        git clone https://github.com/dylanowen/mdbook-graphviz/
+        cd mdbook-graphviz
+
+        cargo build
+        cargo install --force --path .
+
+        cd ${{ github.workspace }}/
+        mdbook build
+
+      # - run: docker run --rm -v $(pwd):/data -u $(id -u):$(id -g) pitop/mdbook mdbook build
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
