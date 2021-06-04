@@ -13,7 +13,7 @@ jobs:
 
       - run: |
           sudo apt-get update
-          sudo apt-get install -y graphviz rust
+          sudo apt-get install -y graphviz cargo
 
           cargo install mdbook --vers 0.4.9
 
