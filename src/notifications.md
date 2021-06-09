@@ -8,4 +8,4 @@ The [`pt-notify-send`](https://github.com/pi-top/pt-os-core/blob/master/src/pt-n
 
 `pt-notify-send` makes it easy to run the command from anywhere - the environment is dynamically taken care of for you, such as the currently active user who is using the active display.
 
-Visually, pi-topOS uses `Xfce4-notifyd` - a simple, visually-appealing notification daemon for Xfce that implements the Freedesktop.org Desktop Notifications Specification.
+Visually, pi-topOS uses [`Xfce4-notifyd`](https://packages.debian.org/buster/xfce4-notifyd) - a simple, visually-appealing notification daemon for Xfce that implements the Freedesktop.org Desktop Notifications Specification.
