@@ -7,6 +7,7 @@
 - [🌀 Web Portal](./web_portal.md)
 - [💁 Tips & Tricks](./tips_and_tricks.md)
 - [🧑‍🔧 Technical Details](./technical_details.md)
+  - [🚨 Notifications](./notifications.md)
 - [🕵️ Troubleshooting](./troubleshooting.md)
 - [📘 Glossary](./glossary.md)
 - [✍️ Contributing](./contributing.md)
