@@ -23,3 +23,43 @@ Usage:
 ```bash
 pt-write "Hello World"
 ```
+
+### Changing Systemd Service Behaviour Using Environment Variables
+
+This section documents specific use-cases where system behaviour can be modified by systemd environment variables.
+
+#### How to update a systemd service's environment
+Run the following in a terminal:
+```bash
+sudo systemctl edit <service>
+```
+
+Paste this into the editor and save:
+```bash
+[Service]
+Environment="KEY=VAL"
+```
+
+Finally, reload systemd manager configuration and restart the service:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart <service>
+```
+
+#### Additional battery logging
+
+Battery messages are no longer logged by default to reduce logging, which takes up unnecessary file system space. To enable this additional logging, set `PT_LOG_BATTERY_CHANGE=1` in the `pt-device-manager` systemd service.
+
+```bash
+sudo systemctl edit pt-device-manager
+```
+
+```bash
+[Service]
+Environment="PT_LOG_BATTERY_CHANGE=1"
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart pt-device-manager
+```
