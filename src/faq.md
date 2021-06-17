@@ -37,3 +37,7 @@ POWER_OFF_ON_HALT=1
 ```
 
 > ⚠️ There is a very small risk of damage to Raspberry Pi HATs where 5V is powered but 3V3 is off (unless the HAT is designed to support that power configuration). Check with your HAT manufacturer to find out more.
+
+## Is my hardware up to date? How can I check?
+
+First, ensure that your OS is up to date. Then, connect any external peripherals you have. If you get a notification asking to update, then apply it. After this, you should have the latest version of the firmware (embedded software) for your pi-top hardware! Run `pi-top devices` in the terminal to check the firmware version of any applicable devices.
