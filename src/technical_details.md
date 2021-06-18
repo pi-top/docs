@@ -146,59 +146,35 @@ digraph "pt-os" {
 
 ## Table Of pi-top Software Packages
 
-Here is an outline of how the packages are organized:
+Here is a work-in-progress guide to the packages that currently comprise pi-topOS:
 
-### Core Packages / System Management
-* pt-os-core
-
-### Theming
-* pt-icon-theme
-* pt-plym-splash
-* pt-ui-mods
-
-### Desktop
-* pt-notifications
-* pt-system-tools
-
-### GUIs
-* pt-shutdown-helper
-* web-renderer
-
-### Hardware
-* i2c-tools-extra (Additional I2C utilities)
-* pt-sys-oled
-* pt-touchscreen
-
-Here is a more comprehensive guide (work in progress) of the packages that currently comprise pi-topOS:
-
-| Source Package           | Binary Package(s)                                             | Repository                                                
-|--------------------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| pt-avs                   | <ul><li>pt-avs</li></ul>                                      | [Link](https://github.com/pi-top/Alexa-Voice-Service-integration) |
-| i2c-tools-extra          | <ul><li>i2c-tools-extra</li></ul>                             | [Link](https://github.com/pi-top/i2c-tools-extra)                 |
-| luma.core                | <ul><li>python3-luma-core</li></ul>                           | [Link](https://github.com/pi-top/luma.core-deb)                   |
-| luma.oled                | <ul><li>python3-luma-oled</li></ul>                           | [Link](https://github.com/pi-top/luma.oled-deb)                   |
-| notify-send.sh           | <ul><li>notify-send-ng</li></ul>                              | [Link](https://github.com/pi-top/notify-send.sh-deb)              |
-| raspi2png                | <ul><li>raspi2png</li></ul>                                   | [Link](https://github.com/pi-top/raspi2png)                       |
-| py-pitop-common          | <ul><li>python3-pitopcommon</li></ul>                         | [Link](https://github.com/pi-top/pi-top-Python-Common-Library)    |
-| py-pitop-sdk             | <ul><li>py-pitop-sdk</li><li>python3-pitop-full</li></ul>     | [Link](https://github.com/pi-top/pi-top-Python-SDK)               |
-| pt-device-manager        | <ul><li>pt-device-manager</li></ul>                           |                                                                   |
-| pt-display-port          | <ul><li>pt-display-port</li><li>pt-dp-usb-eth-gadget</li><li>pt-dp-dhcp-server</li></ul> |                                        |
-| pt-firmware-images       | <ul><li>pt-firmware-images</li></ul>                          |                                                                   |
-| pt-firmware-updater      | <ul><li>pt-firmware-updater</li></ul>                         |                                                                   |
-| pt-further-link          | <ul><li>pt-further-link</li></ul>                             | [Link](https://github.com/pi-top/pt-further-link)                 |
-| pt-icon-theme            | <ul><li>pt-icon-theme</li></ul>                               | [Link](https://github.com/pi-top/pt-icon-theme)                   |
-| pt-networking            | <ul><li>pt-networking</li></ul>                               | [Link](https://github.com/pi-top/pt-os-core)                      |
-| pt-os-core               | <ul><li>pt-os-core</li><li>pt-os</li><li>pt-apps</li><li>pt-dev</li><li>pt-devices</li><li>pt-ui</li><li>pt-user-libs</li><li>pt-os-archive-keyring</li><li>pi-top-4</li><li>pt-system-tools</li><li>pt-notifications</li></ul>                 |                                                                   |
-| pt-os-mods               | <ul><li>pt-os-mods</li></ul>                                  |                                                                   |
-| pt-plym-splash           | <ul><li>pt-plym-splash</li></ul>                              | [Link](https://github.com/pi-top/pt-plym-splash)                  |
-| pt-recovery              | <ul><li>pt-recovery</li></ul>                                 |                                                                   |
-| pt-shutdown-helper       | <ul><li>pt-shutdown-helper</li></ul>                          | [Link](https://github.com/pi-top/pt-shutdown-helper)              |
-| pt-sys-oled              | <ul><li>pt-sys-oled</li></ul>                                 | [Link](https://github.com/pi-top/pt-sys-oled)                     |
-| pt-touchscreen           | <ul><li>pt-touchscreen</li></ul>                              | [Link](https://github.com/pi-top/pt-touchscreen)                  |
-| pt-ui-mods               | <ul><li>pt-ui-mods</li></ul>                                  | [Link](https://github.com/pi-top/pt-ui-mods)                      |
-| pt-web-portal            | <ul><li>pt-web-portal</li><li>pt-web-portal-desktop</li></ul> |                                                                   |
-| pt-wireless-access-point | <ul><li>pt-wireless-access-point</li></ul>                    |                                                                   |
-| web-renderer             | <ul><li>web-renderer</li></ul>                                | [Link](https://github.com/pi-top/web-renderer)                    |
+| Source Package           | Binary Package(s)                                                    | Repository                                                        |
+|--------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------|
+| pt-avs                   | <ul><li>pt-avs</li></ul>                                             | [Link](https://github.com/pi-top/Alexa-Voice-Service-integration) |
+| i2c-tools-extra          | <ul><li>i2c-tools-extra</li></ul>                                    | [Link](https://github.com/pi-top/i2c-tools-extra)                 |
+| luma.core                | <ul><li>python3-luma-core</li></ul>                                  | [Link](https://github.com/pi-top/luma.core-deb)                   |
+| luma.oled                | <ul><li>python3-luma-oled</li></ul>                                  | [Link](https://github.com/pi-top/luma.oled-deb)                   |
+| notify-send.sh           | <ul><li>notify-send-ng</li></ul>                                     | [Link](https://github.com/pi-top/notify-send.sh-deb)              |
+| raspi2png                | <ul><li>raspi2png</li></ul>                                          | [Link](https://github.com/pi-top/raspi2png)                       |
+| py-pitop-common          | <ul><li>python3-pitopcommon</li></ul>                                | [Link](https://github.com/pi-top/pi-top-Python-Common-Library)    |
+| py-pitop-sdk             | <ul><li>py-pitop-sdk</li><li>python3-pitop-full</li></ul>            | [Link](https://github.com/pi-top/pi-top-Python-SDK)               |
+| pt-device-manager        | <ul><li>pt-device-manager</li></ul>                                  |                                                                   |
+| pt-display-port          | <ul><li>pt-display-port</li><li>pt-dp-usb-eth-gadget</li><li>pt-dp-dhcp-server</li></ul> |                                               |
+| pt-firmware-images       | <ul><li>pt-firmware-images</li></ul>                                 |                                                                   |
+| pt-firmware-updater      | <ul><li>pt-firmware-updater</li></ul>                                |                                                                   |
+| pt-further-link          | <ul><li>pt-further-link</li></ul>                                    | [Link](https://github.com/pi-top/pt-further-link)                 |
+| pt-icon-theme            | <ul><li>pt-icon-theme</li></ul>                                      | [Link](https://github.com/pi-top/pt-icon-theme)                   |
+| pt-networking            | <ul><li>pt-networking</li></ul>                                      | [Link](https://github.com/pi-top/pt-os-core)                      |
+| pt-os-core               | <ul><li>pt-os-core</li><li>pt-os</li><li>pt-apps</li><li>pt-dev</li><li>pt-devices</li><li>pt-ui</li><li>pt-user-libs</li><li>pt-os-archive-keyring</li><li>pi-top-4</li><li>pt-system-tools</li><li>pt-notifications</li><li>pt-touchscreen</li></ul> |                                                                   |
+| pt-os-mods               | <ul><li>pt-os-mods</li></ul>                                         |                                                                   |
+| pt-plym-splash           | <ul><li>pt-plym-splash</li></ul>                                     | [Link](https://github.com/pi-top/pt-plym-splash)                  |
+| pt-recovery              | <ul><li>pt-recovery</li></ul>                                        | [Link](https://github.com/pi-top/pi-topOS-Recovery)               |
+| pt-shutdown-helper       | <ul><li>pt-shutdown-helper</li></ul>                                 | [Link](https://github.com/pi-top/pt-shutdown-helper)              |
+| pt-sys-oled              | <ul><li>pt-sys-oled</li></ul>                                        | [Link](https://github.com/pi-top/pt-sys-oled)                     |
+| pt-ui-mods               | <ul><li>pt-ui-mods</li></ul>                                         | [Link](https://github.com/pi-top/pt-ui-mods)                      |
+| pt-web-portal            | <ul><li>pt-web-portal</li><li>pt-web-portal-desktop</li></ul>        | [Link](https://github.com/pi-top/pt-web-portal)                   |
+| rpi-wifi-ap              | <ul><li>rpi-wifi-ap</li></ul>                                        | [Link](https://github.com/pi-top/rpi-wifi-ap)                     |
+| web-renderer             | <ul><li>web-renderer</li></ul>                                       | [Link](https://github.com/pi-top/web-renderer)                    |
 
 
 ## OS build process
