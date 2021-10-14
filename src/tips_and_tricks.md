@@ -63,3 +63,45 @@ Environment="PT_LOG_BATTERY_CHANGE=1"
 sudo systemctl daemon-reload
 sudo systemctl restart pt-device-manager
 ```
+
+#### Controlling Systemd Services
+
+Many parts of pi-topOS are managed by systemd services - for example, ``pi-topd`` runs as a systemd service which starts with the OS and stops on shutdown. However, for diagnostic or debugging purposes it can be useful to start and stop it, or to run it standalone.
+
+For example, to check the current status of the `pi-topd` service:
+
+<pre style="background-color: #002b36; color: #FFFFFF;">
+sudo systemctl status pi-topd
+
+<span style="color:#E0E0E0"><span style="color:#859900">●</span> pi-topd.service - pi-top device auto-detection and configuration daemon
+     Loaded: loaded (/lib/systemd/system/pi-topd.service; enabled)
+     Active: <span style="color:#859900">active (running)</span> since Tue 2017-10-17 15:55:43 UTC; 1s ago
+ Main PID: 15974 (pt-device-manag)
+     CGroup: /system.slice/pi-topd.service
+                     └─15974 /usr/bin/python3 /usr/lib/pi-topd/pi-topd</span>
+</pre>
+
+Starting/stopping the service:
+
+<pre style="background-color: #002b36; color: #FFFFFF;">
+sudo systemctl start pi-topd
+sudo systemctl stop pi-topd
+</pre>
+
+Stopping and disabling the service, and then running standalone:
+
+<pre style="background-color: #002b36; color: #FFFFFF;">
+sudo systemctl stop pi-topd
+sudo systemctl disable pi-topd
+pi-topd
+</pre>
+
+#### Viewing Systemd Service Logs
+
+As the pi-topd runs as a systemd service, it logs to the system journal. This can be viewed using commands such as:
+
+<pre style="background-color: #002b36; color: #FFFFFF;">
+sudo journalctl -u pi-topd
+sudo journalctl -u pi-topd --no-pager
+sudo journalctl -u pi-topd -b
+</pre>

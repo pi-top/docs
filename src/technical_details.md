@@ -208,3 +208,9 @@ TODO: how pi-topOS software hot-loads kernel modules using `dtoverlay` and `dtpa
     * enabling volume control with `hifiberry-alsactl.restore`
 
 TODO: communication protocols (e.g. ZMQ, udev, systemd), which modules require them, why, and how to handle strange "gotchas".
+
+## Temporary Files
+
+Sometimes, files in `/tmp` are used to acquire locks and communicate states. All files in pi-topOS follow the format: /tmp/.com.${company}.${scope}.${feature}.{$state}
+
+e.g. `/tmp/.com.pi-top.pt-touchscreen.hotplug-display.is_connected`

@@ -11,5 +11,6 @@
 - [🕵️ Troubleshooting](./troubleshooting.md)
 - [📘 Glossary](./glossary.md)
 - [✍️ Contributing](./contributing.md)
+- [👷 Development](./development.md)
 - [⚙️ Building And Deploying (CI)](./ci.md)
 - [🔗 Links](./links.md)

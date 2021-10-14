@@ -41,3 +41,30 @@ POWER_OFF_ON_HALT=1
 ## Is my hardware up to date? How can I check?
 
 First, ensure that your OS is up to date. Then, connect any external peripherals you have. If you get a notification asking to update, then apply it. After this, you should have the latest version of the firmware (embedded software) for your pi-top hardware! Run `pi-top devices` in the terminal to check the firmware version of any applicable devices.
+
+## Why is my pi-top v1 reporting itself to be a pi-topCEED?
+
+[`pi-topd`](https://github.com/pi-top/pi-topd) uses the presence of the battery to identify a pi-top v1.
+If this is not possible, then it will assume that it is now connected to a pi-topCEED.
+The battery is detected by scanning for its I2C address (``0x0b``). You can see if the Raspberry Pi can 'see' the device by scanning for I2C addresses:
+
+    sudo i2cdetect -y 1
+
+If you cannot see `0b` in the list, then there is likely a hardware issue.
+
+## What GPIO pins/I2C addresses/SPI busses do pi-top devices use?
+
+| Device                     | I2C Address | SPI Bus
+| -------------------------- |:-----------:|:-----------:|
+| pi-topHUB v1 (pi-top)      |     0x0b    |      1      |
+| pi-topHUB v1 (pi-topCEED)  |      -      |      1      |
+| pi-topHUB v2               |     0x10    |      -      |
+
+| Peripheral               | I2C Address |
+| ------------------------ |:-----------:|
+| pi-topPROTO+             |     0x2a    |
+| pi-topPULSE              |     0x24    |
+| pi-topSPEAKER v1 (Left)  |     0x71    |
+| pi-topSPEAKER v1 (Right) |     0x72    |
+| pi-topSPEAKER v1 (Mono)  |     0x73    |
+| pi-topSPEAKER v2         |     0x43    |
