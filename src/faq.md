@@ -68,3 +68,7 @@ If you cannot see `0b` in the list, then there is likely a hardware issue.
 | pi-topSPEAKER v1 (Right) |     0x72    |
 | pi-topSPEAKER v1 (Mono)  |     0x73    |
 | pi-topSPEAKER v2         |     0x43    |
+
+## Sometimes clicking on desktop notifications doesn't do anything - why?
+
+When the desktop is accessed over VNC, there is an issue where clicking on the action button of a notification results in no action being taken. This is a known issue, and can usually be avoided by clicking somewhere on the desktop _before_ clicking on the notification.
